@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRUD ToDo List : )</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div class="container mt-5">
+      <div class="title text-center">
+        <h1 class="display-5">
+          <i class="fas fa-user-alt text-success"></i> <strong>CRUD ToDo List</strong>
+        </h1>
+      </div>
+      <div class="main row">
+        <div class="col-sm-12 col-md-4">
+          <form id="employee-form" autocomplete="off">
+            <div class="form-group">
+              <label for="title">Name</label>
+              <input type="text" id="title" class="form-control">
+            </div>
+            <input type="submit" value="Submit" class="btn btn-success btn-block add-btn sumbit_btn">
+          </form>
+        </div>
+        <div class="col-sm-12 col-md-8">
+          <table class="table table-striped mt-5">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="employee-list">
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+      </div>    
+
+      <div class="bottom">
+        <p class="timeOut"></p>
+      </div>
+
+      <script src="js/main.js"></script>
+
+</body>
+</html>
